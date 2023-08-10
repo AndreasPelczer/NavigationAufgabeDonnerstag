@@ -1,4 +1,4 @@
-package com.example.navigationdemo
+package com.example.navigationsAufgabeDonnerstag
 
 import org.junit.Test
 

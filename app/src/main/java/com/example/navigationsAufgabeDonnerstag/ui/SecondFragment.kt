@@ -1,4 +1,4 @@
-package com.example.navigationdemo.ui
+package com.example.navigationsAufgabeDonnerstag.ui
 
 import android.os.Bundle
 import android.util.Log
@@ -6,10 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.navigationdemo.R
-import com.example.navigationdemo.databinding.FragmentSecondBinding
+import androidx.navigation.fragment.findNavController
+import com.example.navigationsAufgabeDonnerstag.databinding.FragmentSecondBinding
 
 class SecondFragment : Fragment() {
+
 
     private lateinit var binding: FragmentSecondBinding
     private var data: String = ""
@@ -26,6 +27,7 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         binding = FragmentSecondBinding.inflate(inflater, container, false)
+
         return binding.root
     }
 
@@ -34,6 +36,13 @@ class SecondFragment : Fragment() {
 
         Log.d("NavigationTest", data)
 
+        binding.SecondWeiterBTN.setOnClickListener {
+            val navController = findNavController()
+            navController.navigate(SecondFragmentDirections.actionSecondFragmentToThirdFragment())
+        }
+        binding.backButton.setOnClickListener {
+            findNavController().popBackStack()
+        }
 
     }
 }

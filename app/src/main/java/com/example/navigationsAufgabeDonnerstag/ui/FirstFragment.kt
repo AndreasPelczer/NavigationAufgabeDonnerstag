@@ -1,4 +1,4 @@
-package com.example.navigationdemo.ui
+package com.example.navigationsAufgabeDonnerstag.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.navigationdemo.R
-import com.example.navigationdemo.databinding.FragmentFirstBinding
+import com.example.navigationsAufgabeDonnerstag.R
+import com.example.navigationsAufgabeDonnerstag.R.id.imageView2
+import com.example.navigationsAufgabeDonnerstag.databinding.FragmentFirstBinding
+
 
 class FirstFragment : Fragment() {
 
@@ -24,10 +26,13 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.weiterBTN.setOnClickListener {
+        binding.FirstWeiterBTN.setOnClickListener {
             val navController = findNavController()
             navController.navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment("Hello World!"))
         }
+        binding.imageView2.setImageResource(R.drawable.aufkleber1)
+
+
     }
 
 

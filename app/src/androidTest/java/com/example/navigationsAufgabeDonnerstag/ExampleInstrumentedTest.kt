@@ -1,4 +1,4 @@
-package com.example.navigationdemo
+package com.example.navigationsAufgabeDonnerstag
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

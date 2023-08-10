@@ -6,9 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.navigationsAufgabeDonnerstag.R
-import com.example.navigationsAufgabeDonnerstag.R.id.imageView2
-import com.example.navigationsAufgabeDonnerstag.databinding.FragmentFirstBinding
+import com.example.navigationdemo.R
+import com.example.navigationdemo.databinding.FragmentFirstBinding
+
+
 
 
 class FirstFragment : Fragment() {

@@ -6,7 +6,9 @@ import android.widget.Toast
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
-import com.example.navigationsAufgabeDonnerstag.databinding.ActivityMainBinding
+import com.example.navigationdemo.R
+import com.example.navigationdemo.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 

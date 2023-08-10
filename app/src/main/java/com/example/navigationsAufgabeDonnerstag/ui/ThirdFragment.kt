@@ -6,7 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.navigationsAufgabeDonnerstag.databinding.FragmentThirdBinding
+import com.example.navigationdemo.databinding.FragmentThirdBinding
+
 
 
 class ThirdFragment : Fragment() {
